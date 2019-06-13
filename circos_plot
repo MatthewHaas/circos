@@ -1,0 +1,8 @@
+# 13 June 2019
+# Circos plot for Zizania palustris
+
+# module load circos/0.69-6
+# module load perl
+
+# Run circos by calling configuration file.
+circos -conf circos.conf

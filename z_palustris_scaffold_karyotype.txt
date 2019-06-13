@@ -1,0 +1,17 @@
+chr	-	scf93	1	0	103377072	chr1
+chr	-	scf9	2	0	63217741	chr2
+chr	-	scf70	3	0	111429323	chr3
+chr	-	scf7	4	0	39125943	chr4
+chr	-	scf693	5	0	24058870	chr5
+chr	-	scf51	6	0	13817767	chr6
+chr	-	scf48	7	0	118006097	chr7
+chr	-	scf453	8	0	4333358	chr8
+chr	-	scf415	9	0	105879435	chr9
+chr	-	scf3	10	0	58865324	chr10
+chr	-	scf18	11	0	98769966	chr11
+chr	-	scf13	12	0	95470783	chr12
+chr	-	scf1065	13	0	66616710	chr13
+chr	-	scf1064	14	0	111260184	chr14
+chr	-	scf1063	15	0	42614780	chr15
+chr	-	scf1062	16	0	75690682	chr16
+chr	-	scf1	17	0	95187837	chr17
