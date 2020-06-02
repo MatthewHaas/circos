@@ -10,7 +10,7 @@
 # and replace them with 1-16 numbering format in order to work with circos settings.
 cd /home/jkimball/haasx092/circos/200511_version
 
-for repeat_class in Gypsy Copia otherLTRs;
+for repeat_class in Gypsy Copia otherLTRs all_repeats;
 do
 sed -i "s/zp1/zp1/g" ${repeat_class}/Scaffold_1_${repeat_class}_binned.txt # Not really necessary--replacing zp1 with zp1, but keeping for consistency with other scaffolds.
 sed -i "s/zp3/zp2/g" ${repeat_class}/Scaffold_3_${repeat_class}_binned.txt
