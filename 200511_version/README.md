@@ -24,3 +24,6 @@ Shell script that launches the R script _make_LTR_density_files_for_circos.R_
 
 ## run_repeat_circos.sh
 Shell script that launches circos to make the repeat-specific circos plot (config file = _repeat_specific_circos.conf_).
+
+## snp_density_for_circos_plot.R
+R script used for calculating SNP density for the circos plot. It is generalized, meaning that the input and output filenames are to be specified by the user (with args[1] and args[2]). They are specified within the shell script that launches this R script. Input file should be a tab-separated file (TSV) and the output should be an Rdata file.
