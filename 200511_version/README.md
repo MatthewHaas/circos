@@ -16,6 +16,9 @@ Repeat-specific circos configuration file. Pairs with _run_repeat_circos.sh_. Cu
 ## replace_scaffold_names_for_circos.sh
 Shell script that **should** search for scaffold names according to the the Dovetail numbering system and replace them with a numbering system (1-16) that is preferred by circos using sed. I say **should** because it is not currently working when the script is submitted to the queue. It does, however, work when the code itself is entered directly on the command line. The purpose of this script is to make scaffold numbering systems understandable by circos. Specifically, this was made for the repeat-specific (gypsy, copia, other LTR) circos plot that we are planning to include in the Supplemental material.
 
+## rna_coverage_for_circos.R
+R code for calculating RNA-seq read count coverage of the NWR genome using RNA-seq data from the tissue-specificity analysis.
+
 ## run_downsampled_circos.sh
 Shell script that launches circos to make the GBS downsampling circos plot (config file = _downsampled_circos.conf_).
 
