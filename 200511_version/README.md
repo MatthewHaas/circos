@@ -7,6 +7,9 @@ Downsampled (GBS) for SNP density circos configuration file. Pairs with _run_dow
 ## make_LTR_density_files_for_circos.R
 This R script reads in the long terminal repeat (LTR) bed file and finds the density of _Gypsy_ and _Copia_ separately (versus LTR elements as a whole, as was done in the 200309 version. There are other types of elements besides _Gypsy_ and _Copia_, but those are grouped into one class called "other". Maybe we will eventually want to break those down into smaller components for the circos plot, but the breakdown is already done in a Supplementary Table for the manuscript--so it may not be necessary.
 	
+## make_zizania_specific_links_circos.R
+This R script reads in the CSV file **duplications_with_positions.csv"** which was created from the original **Duplications.tsv** file using the python scripts _parse_duplications_file.py_ and _merge_duplications_with_bed_file.py_. The script then generates files telling circos where to raw the _Zizania_-specific links (which were added to the main circos configuration file, _main_circos_plot.config_.
+
 ## move_LTR_files.sh
 Shell script that moves files created by _run_make_LTR_density_files.sh_ and _make_LTR_density_files_for_circos.R_ into separate subdirectories.
 
