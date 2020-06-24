@@ -4,6 +4,9 @@ Scripts written to make the most recent version of the circos plot for the genom
 ## downsampled_circos.conf
 Downsampled (GBS) for SNP density circos configuration file. Pairs with _run_downsampled_circos.sh_. 
 
+## find_min_max_gypsy_copia.txt
+Command-line code used to find the minimum and maximum values for _Gypsy_ and _Copia_ density (per Mb). The density files that this code operates on are located in either **/home/jkimball/haasx092/circos/200511_version/Gypsy** or **/home/jkimball/haasx092/circos/200511_version/Copia**
+
 ## make_LTR_density_files_for_circos.R
 This R script reads in the long terminal repeat (LTR) bed file and finds the density of _Gypsy_ and _Copia_ separately (versus LTR elements as a whole, as was done in the 200309 version. There are other types of elements besides _Gypsy_ and _Copia_, but those are grouped into one class called "other". Maybe we will eventually want to break those down into smaller components for the circos plot, but the breakdown is already done in a Supplementary Table for the manuscript--so it may not be necessary.
 	
