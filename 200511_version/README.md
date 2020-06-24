@@ -13,6 +13,9 @@ This R script reads in the long terminal repeat (LTR) bed file and finds the den
 ## make_zizania_specific_links_circos.R
 This R script reads in the CSV file **duplications_with_positions.csv"** which was created from the original **Duplications.tsv** file using the python scripts _parse_duplications_file.py_ and _merge_duplications_with_bed_file.py_. The script then generates files telling circos where to raw the _Zizania_-specific links (which were added to the main circos configuration file, _main_circos_plot.config_.
 
+## merge_duplications_with_bed_file.py
+Python code (ran on Matthew's Macbook using Jupyter Notebook) used to merge _Zizania palustris_-specific duplications from the Duplications.tsv file with the positions of those genes from the _Z. palustris_ genome BED file. This file is part of the pipeline used to decide how to draw links for the main circos plot.
+
 ## move_LTR_files.sh
 Shell script that moves files created by _run_make_LTR_density_files.sh_ and _make_LTR_density_files_for_circos.R_ into separate subdirectories.
 
