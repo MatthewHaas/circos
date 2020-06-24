@@ -34,6 +34,9 @@ R code for calculating RNA-seq read count coverage of the NWR genome using RNA-s
 ## run_downsampled_circos.sh
 Shell script that launches circos to make the GBS downsampling circos plot (config file = _downsampled_circos.conf_).
 
+## run_main_circos.sh
+Shell script to run main circos configuration file.
+
 ## run_make_LTR_density_files.sh
 Shell script that launches the R script _make_LTR_density_files_for_circos.R_
 
