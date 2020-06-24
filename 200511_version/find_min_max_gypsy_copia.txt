@@ -1,0 +1,48 @@
+# 23 June 2020
+# WD: /home/jkimball/haax092/circos/200511_version
+
+# This code will quickly find the minimum and maximum values in text files.
+# Copy and pasted on command line rather than run as a script--takes seconds.
+# Wrote it to find min/max values for Gypsy and Copia elements, but can be used for other genomic features.
+
+# Change to the Gypsy directory and run code
+cd ./Gypsy
+
+ls -1 Scaffold*.txt | while read i; do
+dirname $i | tr '\n' '\t'
+ cut -f 1 -d " " $i | sort -n | head -1  | awk '{print $FNR}' \
+ | tr '\n' '\t'
+ cut -f 4 -d " " $i | sort -n | head -1  | awk '{print $FNR}' \
+ | tr '\n' '\t'
+ cut -f 4 -d " " $i | sort -n | tail -1  | awk '{print $FNR,"\t"}'
+ done > output.txt
+
+# Get rid of first column (periods) 
+awk '{print $2,$3,$4}' output.txt > gypsy_min_and_max.txt
+
+# Add column names
+sed -i '1i scaffold minimum maximum' gypsy_min_and_max.txt
+
+# Remove intermediate file
+rm output.txt
+
+# Change to the Copia directory and do the same thing.
+cd ../Copia
+
+ls -1 Scaffold*.txt | while read i; do
+dirname $i | tr '\n' '\t'
+ cut -f 1 -d " " $i | sort -n | head -1  | awk '{print $FNR}' \
+ | tr '\n' '\t'
+ cut -f 4 -d " " $i | sort -n | head -1  | awk '{print $FNR}' \
+ | tr '\n' '\t'
+ cut -f 4 -d " " $i | sort -n | tail -1  | awk '{print $FNR,"\t"}'
+ done > output.txt
+
+# Get rid of first column (periods) 
+awk '{print $2,$3,$4}' output.txt > copia_min_and_max.txt
+
+# Add column names
+sed -i '1i scaffold minimum maximum' copia_min_and_max.txt
+
+# Remove intermediate file
+rm output.txt
