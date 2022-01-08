@@ -1,5 +1,5 @@
 # circos
-Creating a circos plot for _Zizania palustris_.
+Creating a [circos](http://circos.ca) plot for Northern Wild Rice (NWR; _Zizania palustris_). This work was part of the NWR genome paper.
 
 The file [colors.ucsc.conf](colors.ucsc.conf) is a configuration file that was taken from the [UCSC (University of California-Santa Cruz) genome browser human chromosome colors](https://genome.ucsc.edu/goldenPath/help/hgTracksHelp.html).
 
