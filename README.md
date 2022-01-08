@@ -1,6 +1,8 @@
 # circos
 Creating a circos plot for _Zizania palustris_.
 
+The file [colors.ucsc.conf](colors.ucsc.conf) is a configuration file that was taken from the [UCSC (University of California-Santa Cruz) genome browser human chromosome colors](https://genome.ucsc.edu/goldenPath/help/hgTracksHelp.html).
+
 ### This section should be moved to the "early_version" directory because that is the only plot for which it is relevant.
 Files referenced in the circos configuration file (circos.conf) have been put into sub-directories based on their function.
 
